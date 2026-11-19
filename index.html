@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FairShare | Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="FairShare home"
+          >FairShare</a
+        >
+        <span class="eyebrow">PERSONAL FINANCES</span>
+      </header>
+
+      <section aria-labelledby="page-title">
+        <p class="eyebrow">NOVEMBER OVERVIEW</p>
+        <h1 id="page-title">Dashboard</h1>
+        <article class="balance-card">
+          <p class="eyebrow">SAMPLE BALANCE</p>
+          <p class="balance">$2,420.00</p>
+          <p class="muted">A quick view of your month</p>
+        </article>
+
+        <div class="summary-grid" aria-label="Monthly totals">
+          <article class="summary-card">
+            <p class="eyebrow">INCOME</p>
+            <p class="summary-value">$3,200</p>
+          </article>
+          <article class="summary-card">
+            <p class="eyebrow">EXPENSES</p>
+            <p class="summary-value">$780</p>
+          </article>
+        </div>
+
+        <div class="section-heading">
+          <h2>Recent activity</h2>
+          <a href="transactions.html">View all</a>
+        </div>
+        <ul class="simple-list">
+          <li><span>Groceries</span><strong>−$64.20</strong></li>
+          <li>
+            <span>Paycheque</span><strong class="positive">+$1,600.00</strong>
+          </li>
+          <li><span>Transit pass</span><strong>−$98.00</strong></li>
+        </ul>
+
+        <a class="primary-link" href="transactions.html">Add a transaction</a>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page"
+        ><span aria-hidden="true">⌂</span>Home</a
+      >
+      <a href="transactions.html"><span aria-hidden="true">＋</span>Activity</a>
+      <a href="budgets.html"><span aria-hidden="true">▤</span>Budgets</a>
+      <a href="reports.html"><span aria-hidden="true">▥</span>Reports</a>
+    </nav>
+  </body>
+</html>
