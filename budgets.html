@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FairShare | Budgets</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="FairShare home">FairShare</a>
+      <span class="eyebrow">PERSONAL FINANCES</span>
+    </header>
+
+    <section aria-labelledby="page-title">
+      <p class="eyebrow">PLAN YOUR SPENDING</p>
+      <h1 id="page-title">Budgets</h1>
+      <div class="panel form-panel">
+        <h2>Set a budget</h2>
+        <p class="muted form-intro">Choose a monthly category limit.</p>
+        <form>
+          <label for="budget-month">Month</label>
+          <input id="budget-month" name="month" type="month">
+
+          <label for="budget-category">Category</label>
+          <select id="budget-category" name="category">
+            <option value="">Choose a category</option>
+            <option>Food</option>
+            <option>Transport</option>
+            <option>Housing</option>
+            <option>Other</option>
+          </select>
+
+          <label for="budget-limit">Monthly limit</label>
+          <input id="budget-limit" name="limit" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0.00">
+          <button class="primary-button" type="button">Save budget</button>
+          <p class="form-note">Saving and totals will be added in the next phase.</p>
+        </form>
+      </div>
+
+      <div class="section-heading list-heading">
+        <h2>Monthly budgets</h2>
+        <span class="muted">Sample entries</span>
+      </div>
+      <div class="budget-list">
+        <article class="panel budget-item">
+          <div class="budget-line"><strong>Food</strong><span>$320 of $500</span></div>
+          <progress value="64" max="100" aria-label="Food budget 64 percent used">64%</progress>
+        </article>
+        <article class="panel budget-item">
+          <div class="budget-line"><strong>Transport</strong><span>$98 of $180</span></div>
+          <progress value="54" max="100" aria-label="Transport budget 54 percent used">54%</progress>
+        </article>
+        <article class="panel budget-item">
+          <div class="budget-line"><strong>Housing</strong><span>$900 of $1,200</span></div>
+          <progress value="75" max="100" aria-label="Housing budget 75 percent used">75%</progress>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a href="index.html"><span aria-hidden="true">⌂</span>Home</a>
+    <a href="transactions.html"><span aria-hidden="true">＋</span>Activity</a>
+    <a href="budgets.html" aria-current="page"><span aria-hidden="true">▤</span>Budgets</a>
+    <a href="reports.html"><span aria-hidden="true">▥</span>Reports</a>
+  </nav>
+</body>
+</html>
