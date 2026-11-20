@@ -219,7 +219,7 @@ h2 {
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 10px;
-  font-size: .88rem;
+  font-size: 0.88rem;
 }
 
 .budget-line span {
@@ -250,7 +250,7 @@ form {
 
 form label {
   margin-top: 8px;
-  font-size: .88rem;
+  font-size: 0.88rem;
   font-weight: 700;
 }
 
@@ -273,7 +273,7 @@ form select:focus {
 
 .optional {
   color: var(--muted);
-  font-size: .78rem;
+  font-size: 0.78rem;
   font-weight: 400;
 }
 
@@ -285,7 +285,7 @@ form select:focus {
 .form-note {
   margin: 4px 0 0;
   color: var(--muted);
-  font-size: .78rem;
+  font-size: 0.78rem;
   line-height: 1.4;
 }
 
@@ -297,5 +297,36 @@ form select:focus {
   display: block;
   margin-top: 4px;
   color: var(--muted);
-  font-size: .76rem;
+  font-size: 0.76rem;
+}
+
+/* Report summary */
+.report-total {
+  margin-top: 14px;
+  padding: 16px;
+}
+.report-value {
+  margin: 4px 0 0;
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.report-heading {
+  margin-top: 24px;
+}
+.report-list {
+  display: grid;
+  gap: 8px;
+}
+.report-item {
+  padding: 12px 14px;
+}
+.report-item .budget-line {
+  margin-bottom: 7px;
+}
+.report-item progress {
+  display: block;
+  width: 100%;
+  height: 7px;
+  accent-color: var(--accent);
 }

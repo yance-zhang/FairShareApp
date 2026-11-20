@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FairShare | Reports</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="FairShare home"
+          >FairShare</a
+        >
+        <span class="eyebrow">PERSONAL FINANCES</span>
+      </header>
+
+      <section aria-labelledby="page-title">
+        <p class="eyebrow">UNDERSTAND YOUR SPENDING</p>
+        <h1 id="page-title">Reports</h1>
+        <div class="panel form-panel">
+          <h2>Report filters</h2>
+          <p class="muted form-intro">Choose a period and category.</p>
+          <form>
+            <label for="report-month">Month</label>
+            <input id="report-month" name="month" type="month" />
+
+            <label for="report-category">Category</label>
+            <select id="report-category" name="category">
+              <option>All categories</option>
+              <option>Food</option>
+              <option>Transport</option>
+              <option>Housing</option>
+              <option>Other</option>
+            </select>
+            <button class="primary-button" type="button">Apply filters</button>
+            <p class="form-note">
+              Filtering and calculations will be added in the next phase.
+            </p>
+          </form>
+        </div>
+
+        <article class="panel report-total">
+          <p class="eyebrow">SAMPLE MONTHLY EXPENSES</p>
+          <p class="report-value">$780.00</p>
+        </article>
+
+        <div class="section-heading report-heading">
+          <h2>Spending by category</h2>
+          <span class="muted">Sample figures</span>
+        </div>
+        <div class="report-list">
+          <article class="panel report-item">
+            <div class="budget-line">
+              <strong>Food</strong><span>$320 · 41%</span>
+            </div>
+            <progress
+              value="41"
+              max="100"
+              aria-label="Food 41 percent of expenses"
+            >
+              41%
+            </progress>
+          </article>
+          <article class="panel report-item">
+            <div class="budget-line">
+              <strong>Housing</strong><span>$280 · 36%</span>
+            </div>
+            <progress
+              value="36"
+              max="100"
+              aria-label="Housing 36 percent of expenses"
+            >
+              36%
+            </progress>
+          </article>
+          <article class="panel report-item">
+            <div class="budget-line">
+              <strong>Transport</strong><span>$120 · 15%</span>
+            </div>
+            <progress
+              value="15"
+              max="100"
+              aria-label="Transport 15 percent of expenses"
+            >
+              15%
+            </progress>
+          </article>
+          <article class="panel report-item">
+            <div class="budget-line">
+              <strong>Other</strong><span>$60 · 8%</span>
+            </div>
+            <progress
+              value="8"
+              max="100"
+              aria-label="Other 8 percent of expenses"
+            >
+              8%
+            </progress>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <a href="index.html"><span aria-hidden="true">⌂</span>Home</a>
+      <a href="transactions.html"><span aria-hidden="true">＋</span>Activity</a>
+      <a href="budgets.html"><span aria-hidden="true">▤</span>Budgets</a>
+      <a href="reports.html" aria-current="page"
+        ><span aria-hidden="true">▥</span>Reports</a
+      >
+    </nav>
+  </body>
+</html>
