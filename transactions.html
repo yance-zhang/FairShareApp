@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FairShare | Transactions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="page">
+        <header class="topbar">
+            <a class="brand" href="index.html" aria-label="FairShare home">FairShare</a>
+            <span class="eyebrow">PERSONAL FINANCES</span>
+        </header>
+
+        <section aria-labelledby="page-title">
+            <p class="eyebrow">YOUR ACTIVITY</p>
+            <h1 id="page-title">Transactions</h1>
+            <div class="panel form-panel">
+                <h2>New transaction</h2>
+                <p class="muted form-intro">Enter details to preview the form.</p>
+                <form>
+                    <label for="transaction-type">Type</label>
+                    <select id="transaction-type" name="type">
+                        <option>Expense</option>
+                        <option>Income</option>
+                    </select>
+
+                    <label for="transaction-amount">Amount</label>
+                    <input id="transaction-amount" name="amount" type="number" min="0" step="0.01" inputmode="decimal"
+                        placeholder="0.00">
+
+                    <label for="transaction-category">Category</label>
+                    <select id="transaction-category" name="category">
+                        <option value="">Choose a category</option>
+                        <option>Food</option>
+                        <option>Transport</option>
+                        <option>Housing</option>
+                        <option>Other</option>
+                    </select>
+
+                    <label for="transaction-date">Date</label>
+                    <input id="transaction-date" name="date" type="date">
+
+                    <label for="transaction-note">Note <span class="optional">Optional</span></label>
+                    <input id="transaction-note" name="note" type="text" maxlength="60" placeholder="Add a short note">
+                    <button class="primary-button" type="button">Save transaction</button>
+                    <p class="form-note">Saving and calculations will be added in the next phase.</p>
+                </form>
+            </div>
+
+            <div class="section-heading list-heading">
+                <h2>Recent transactions</h2>
+                <span class="muted">Sample entries</span>
+            </div>
+            <ul class="simple-list">
+                <li><span>Groceries <small>Food · Nov 18</small></span><strong>−$64.20</strong></li>
+                <li><span>Paycheque <small>Income · Nov 15</small></span><strong class="positive">+$1,600.00</strong>
+                </li>
+                <li><span>Transit pass <small>Transport · Nov 12</small></span><strong>−$98.00</strong></li>
+            </ul>
+        </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+        <a href="index.html"><span aria-hidden="true">⌂</span>Home</a>
+        <a href="transactions.html" aria-current="page"><span aria-hidden="true">＋</span>Activity</a>
+        <a href="budgets.html"><span aria-hidden="true">▤</span>Budgets</a>
+        <a href="reports.html"><span aria-hidden="true">▥</span>Reports</a>
+    </nav>
+</body>
+
+</html>
