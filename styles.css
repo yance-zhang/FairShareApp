@@ -13,30 +13,36 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   min-width: 320px;
 }
+
 a {
   color: var(--accent);
 }
+
 button,
 input,
 select {
   font: inherit;
 }
+
 .page {
   width: min(100%, 480px);
   min-height: 100vh;
   margin: 0 auto;
   padding: 20px 16px 96px;
 }
+
 .topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 28px;
 }
+
 .brand {
   color: #202a27;
   font-size: 1.2rem;
@@ -44,6 +50,7 @@ select {
   text-decoration: none;
   letter-spacing: -0.03em;
 }
+
 .eyebrow {
   margin: 0 0 6px;
   color: var(--muted);
@@ -51,15 +58,18 @@ select {
   font-weight: 700;
   letter-spacing: 0.08em;
 }
+
 h1 {
   margin: 0 0 18px;
   font-size: 1.7rem;
   letter-spacing: -0.04em;
 }
+
 h2 {
   margin: 0;
   font-size: 1rem;
 }
+
 .balance-card,
 .summary-card,
 .panel {
@@ -67,51 +77,61 @@ h2 {
   border: 1px solid var(--line);
   border-radius: 14px;
 }
+
 .balance-card {
   padding: 18px;
   background: var(--accent-soft);
 }
+
 .balance {
   margin: 4px 0;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.04em;
 }
+
 .muted {
   margin: 4px 0 0;
   color: var(--muted);
   font-size: 0.9rem;
 }
+
 .summary-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   margin: 12px 0 26px;
 }
+
 .summary-card {
   padding: 14px;
 }
+
 .summary-value {
   margin: 6px 0 0;
   font-size: 1.1rem;
   font-weight: 700;
 }
+
 .section-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
+
 .section-heading a {
   font-size: 0.85rem;
   font-weight: 700;
   text-decoration: none;
 }
+
 .simple-list {
   margin: 0 0 20px;
   padding: 0;
   list-style: none;
 }
+
 .simple-list li {
   display: flex;
   justify-content: space-between;
@@ -120,12 +140,15 @@ h2 {
   border-bottom: 1px solid var(--line);
   font-size: 0.92rem;
 }
+
 .simple-list strong {
   white-space: nowrap;
 }
+
 .positive {
   color: var(--accent);
 }
+
 .primary-link,
 .primary-button {
   display: flex;
@@ -141,6 +164,7 @@ h2 {
   text-align: center;
   text-decoration: none;
 }
+
 .bottom-nav {
   position: fixed;
   z-index: 2;
@@ -155,6 +179,7 @@ h2 {
   border-top: 1px solid var(--line);
   background: #fff;
 }
+
 .bottom-nav a {
   display: flex;
   min-height: 48px;
@@ -167,10 +192,12 @@ h2 {
   font-size: 0.72rem;
   text-decoration: none;
 }
+
 .bottom-nav a span {
   font-size: 1.15rem;
   line-height: 1;
 }
+
 .bottom-nav a[aria-current="page"] {
   background: var(--accent-soft);
   color: var(--accent);
@@ -182,23 +209,93 @@ h2 {
   display: grid;
   gap: 10px;
 }
+
 .budget-item {
   padding: 14px;
 }
+
 .budget-line {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   gap: 12px;
   margin-bottom: 10px;
   font-size: .88rem;
 }
+
 .budget-line span {
   color: var(--muted);
   white-space: nowrap;
 }
+
 .budget-item progress {
   display: block;
   width: 100%;
   height: 8px;
   accent-color: var(--accent);
+}
+
+/* Transaction entry form */
+.form-panel {
+  padding: 18px;
+}
+
+.form-intro {
+  margin: 6px 0 18px;
+}
+
+form {
+  display: grid;
+  gap: 8px;
+}
+
+form label {
+  margin-top: 8px;
+  font-size: .88rem;
+  font-weight: 700;
+}
+
+form input,
+form select {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: #202a27;
+}
+
+form input:focus,
+form select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.optional {
+  color: var(--muted);
+  font-size: .78rem;
+  font-weight: 400;
+}
+
+.form-panel .primary-button {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.form-note {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: .78rem;
+  line-height: 1.4;
+}
+
+.list-heading {
+  margin-top: 24px;
+}
+
+.simple-list small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: .76rem;
 }
